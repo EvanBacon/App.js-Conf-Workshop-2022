@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest"
+  },
+  "dependencies": {
+    "expo": "^45.0.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.68.2",
+    "react-native-screens": "~3.11.1",
+    "react-native-web": "0.17.7"
+  },
+  "devDependencies": {
+    "jest": "^26",
+    "@babel/core": "^7.12.9",
+    "@types/react": "~17.0.21",
+    "@types/react-native": "~0.67.6",
+    "typescript": "~4.3.5",
+    "@types/jest": "25.2.1",
+    "jest-expo": "^45.0.1",
+    "react-native-testing-library": "1.13.2"
+  },
+  "private": true,
+  "jest": {
+    "preset": "jest-expo/universal"
+  }
+}

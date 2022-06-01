@@ -1,0 +1,11 @@
+{
+    "expo": {
+      "name": "quick-actions",
+      "slug": "quick-actions",
+      "icon": "https://icogen.vercel.app/api/icon",
+      
+      "//": "Add the config plugin to the array and configure.",
+      "plugins": []
+    }
+  }
+  

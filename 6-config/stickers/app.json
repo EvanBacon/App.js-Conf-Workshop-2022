@@ -1,0 +1,11 @@
+{
+    "expo": {
+      "name": "sticker-app",
+      "slug": "sticker-app",
+      "icon": "https://icogen.vercel.app/api/icon",
+      
+      "//": "Add the config plugin to the array and configure.",
+      "plugins": []
+    }
+  }
+  

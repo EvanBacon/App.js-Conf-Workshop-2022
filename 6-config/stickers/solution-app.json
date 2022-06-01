@@ -1,0 +1,29 @@
+{
+    "expo": {
+      "name": "sticker-app",
+      "slug": "sticker-app",
+      "icon": "https://icogen.vercel.app/api/icon",
+      "plugins": [
+        [
+          "@config-plugins/ios-stickers",
+          {
+            "name": "Expo Stickers",
+            "icon": "./sticker-icon.png",
+            "columns": 3,
+            "stickers": [
+              "https://icogen.vercel.app/api/icon?color_hex=00000000&padding=0&icon=🥑",
+              "https://icogen.vercel.app/api/icon?color_hex=00000000&padding=0&icon=🥓",
+              "https://icogen.vercel.app/api/icon?color_hex=00000000&padding=0&icon=⭐️",
+              "https://icogen.vercel.app/api/icon?color_hex=00000000&padding=0&icon=🌸",
+              "https://icogen.vercel.app/api/icon?color_hex=00000000&padding=0&icon=🐶",
+              "https://icogen.vercel.app/api/icon?color_hex=00000000&padding=0&icon=🔥",
+              "https://icogen.vercel.app/api/icon?color_hex=00000000&padding=0&icon=💾",
+              "https://icogen.vercel.app/api/icon?color_hex=00000000&padding=0&icon=⚙️",
+              "https://icogen.vercel.app/api/icon?color_hex=00000000&padding=0&icon=🪩"
+            ]
+          }
+        ]
+      ]
+    }
+  }
+  

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Platform.OS works as expected 1`] = `
+<div
+  className="css-view-1dbjc4n"
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
+      "WebkitBoxPack": "center",
+      "WebkitFlex": 1,
+      "WebkitJustifyContent": "center",
+      "alignItems": "center",
+      "backgroundColor": "rgba(255,255,255,1.00)",
+      "flex": 1,
+      "justifyContent": "center",
+      "msFlex": "1 1 0%",
+      "msFlexAlign": "center",
+      "msFlexPack": "center",
+    }
+  }
+>
+  <div
+    className="css-text-901oao"
+    dir="auto"
+  >
+    Open up App.tsx to start working on your app!
+  </div>
+  <div
+    className="css-text-901oao"
+    dir="auto"
+  >
+    I'm running on web!
+  </div>
+</div>
+`;

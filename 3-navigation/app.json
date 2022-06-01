@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "navigation",
+    "slug": "navigation",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "https://icogen.vercel.app/api/splash?icon=⚓️",
+      "resizeMode": "cover"
+    }
+  }
+}

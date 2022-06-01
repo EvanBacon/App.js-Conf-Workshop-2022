@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "get-started",
+    "slug": "get-started",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover"
+    }
+  }
+}

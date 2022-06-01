@@ -1,0 +1,17 @@
+{
+  "name": "detox",
+  "displayName": "detox",
+  "expo": {
+    "name": "detox",
+    "slug": "detox",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

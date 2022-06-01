@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "4-web",
+    "slug": "4-web",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    }
+  }
+}
