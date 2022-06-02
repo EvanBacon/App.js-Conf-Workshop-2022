@@ -1,6 +1,4 @@
-# React Europe 2020 React Native workshop
-
-Download slides [here](https://www.dropbox.com/sh/x346hry5oxjwhll/AACLgZujAeb7lCjnvsYPrqXSa?dl=0).
+# App.js Conf 2021 React Native workshop
 
 Order of sections:
 
@@ -9,6 +7,10 @@ Order of sections:
 3. **navigation**: Learn to navigate around an app.
 4. **tooling**: Improve your workflow and build out your toolchain.
 5. **dev-clients**: Improve your workflow and build out your toolchain.
-6. **web**: Use React Native for the web.
+
+## Hosts
+
+- Evan Bacon (Expo) @evanbacon
+- Lydia Hallie (Vercel) @lydiahallie
 
 > Based on [react-europe-2020](https://github.com/jonsamp/react-europe-2020/) by @jonsamp.
