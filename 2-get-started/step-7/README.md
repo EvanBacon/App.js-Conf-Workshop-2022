@@ -1,3 +1,4 @@
 # Notes
 
-- [Splash screen guide](https://docs.expo.io/guides/splash-screens/)
+- [`@expo/html-elements`](https://www.npmjs.com/package/@expo/html-elements)
+- [react-native-web A11Y](https://necolas.github.io/react-native-web/docs/accessibility/)

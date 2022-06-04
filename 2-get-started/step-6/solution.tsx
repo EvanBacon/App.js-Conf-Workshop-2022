@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import {
   Image,
   StyleSheet,
@@ -7,9 +7,25 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import { useHover } from "react-native-web-hooks";
 import * as ImagePicker from "expo-image-picker";
 import * as Sharing from "expo-sharing";
-import uploadToAnonymousFilesAsync from "anonymous-files";
+
+function HoverView(props) {
+  const ref = useRef(null);
+  const isHovered = useHover(ref);
+
+  return (
+    <View
+      {...props}
+      ref={ref}
+      style={{
+        opacity: isHovered ? 0.5 : 1,
+        ...Platform.select({ web: { transitionDuration: "300ms" } }),
+      }}
+    />
+  );
+}
 
 export function Step6() {
   const [selectedImage, setSelectedImage] = useState<{
@@ -18,7 +34,8 @@ export function Step6() {
   }>();
 
   let openImagePickerAsync = async () => {
-    let permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
+    let permissionResult =
+      await ImagePicker.requestMediaLibraryPermissionsAsync();
 
     if (permissionResult.granted === false) {
       alert("Permission to access camera roll is required!");
@@ -31,12 +48,7 @@ export function Step6() {
       return;
     }
 
-    if (Platform.OS === "web") {
-      let remoteUri = await uploadToAnonymousFilesAsync(pickerResult.uri);
-      setSelectedImage({ localUri: pickerResult.uri, remoteUri });
-    } else {
-      setSelectedImage({ localUri: pickerResult.uri, remoteUri: null });
-    }
+    setSelectedImage({ localUri: pickerResult.uri, remoteUri: null });
   };
 
   let openShareDialogAsync = async () => {
@@ -55,10 +67,12 @@ export function Step6() {
   if (selectedImage) {
     return (
       <View style={styles.container}>
-        <Image
-          source={{ uri: selectedImage && selectedImage.localUri }}
-          style={styles.thumbnail}
-        />
+        <HoverView>
+          <Image
+            source={{ uri: selectedImage && selectedImage.localUri }}
+            style={styles.thumbnail}
+          />
+        </HoverView>
         <TouchableOpacity onPress={openShareDialogAsync} style={styles.button}>
           <Text style={styles.buttonText}>Share this photo</Text>
         </TouchableOpacity>
@@ -68,10 +82,12 @@ export function Step6() {
 
   return (
     <View style={styles.container}>
-      <Image
-        source={{ uri: "https://i.imgur.com/TkIrScD.png" }}
-        style={styles.logo}
-      />
+      <HoverView>
+        <Image
+          source={{ uri: "https://i.imgur.com/TkIrScD.png" }}
+          style={styles.logo}
+        />
+      </HoverView>
       <Text style={styles.instructions}>
         To share a photo from your phone with a friend, just press the button
         below!

@@ -3,7 +3,14 @@ import { useState } from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import * as Sharing from "expo-sharing";
-// TODO: import uploadToAnonymousFilesAsync from 'anonymous-files';
+// TODO: import { useHover } from react-native-web-hooks
+
+// TODO: Create a wrapper component "HoverView" that uses two hooks
+// useRef and useHover, where ref is passed to useHover.
+
+// TODO: Pass `ref` to the View element and forward all props to the View.
+// Add a style that optionally changes opacity based on the `isHovered` property.
+
 
 export function Step6() {
   const [selectedImage, setSelectedImage] = useState<{
@@ -25,8 +32,6 @@ export function Step6() {
       return;
     }
 
-    // TODO: If the Platform.OS is "web", call uploadToAnonymousFilesAsync and pass in the pickerResult.uri, then set the selected image with the localUri and the remoteUri like: setSelectedImage({ localUri: pickerResult.uri, remoteUri });
-    // If the Platform is not "web", then call your previous function:
     setSelectedImage({ localUri: pickerResult.uri, remoteUri: null });
   };
 
@@ -47,6 +52,7 @@ export function Step6() {
   if (selectedImage) {
     return (
       <View style={styles.container}>
+        {/* TODO: Wrap this component with our new `HoverView` component */}
         <Image
           source={{ uri: selectedImage && selectedImage.localUri }}
           style={styles.thumbnail}
@@ -60,6 +66,7 @@ export function Step6() {
 
   return (
     <View style={styles.container}>
+      {/* TODO: Wrap this component with our new `HoverView` component */}
       <Image
         source={{ uri: "https://i.imgur.com/TkIrScD.png" }}
         style={styles.logo}
