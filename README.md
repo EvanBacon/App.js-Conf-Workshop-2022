@@ -6,7 +6,6 @@ Order of sections:
 2. **get-started**: Get coding on your first project.
 3. **navigation**: Learn to navigate around an app.
 4. **tooling**: Improve your workflow and build out your toolchain.
-5. **dev-clients**: Improve your workflow and build out your toolchain.
 
 ## Hosts
 
